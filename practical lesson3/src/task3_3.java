@@ -1,7 +1,7 @@
 public class task3_3 {
     public static void main(String[] args) {
        
-        double epsilon = 0.1;
+        double epsilon = 0.001;
 
         double sum = 0;
         int i = 1;
