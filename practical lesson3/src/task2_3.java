@@ -16,8 +16,8 @@ public class task2_3 {
     }
 
     public static void main(String[] args) {
-        double t = -2; // Пример значения t
-        int n = 5;     // Пример значения n
+        double t = -2;
+        int n = 5;     
 
         double result = calculateX(t, n);
         System.out.println("x(" + t + ", " + n + ") = " + result);
