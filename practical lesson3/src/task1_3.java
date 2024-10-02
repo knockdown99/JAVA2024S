@@ -14,7 +14,7 @@ public class task1_3 {
             sum += Math.sqrt(m / i) * Math.sin(m * i);
         }
 
-        System.out.println("the sum of the series:" +sum);
+        System.out.printf("the sum of the series: %.6f ", sum);
     }
     
 }

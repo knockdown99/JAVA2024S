@@ -18,7 +18,8 @@ public class task3_3 {
             i++;
         }
 
-        System.out.println("the sum of the series, when epsilon = " + epsilon + ": " + sum);
+        
+        System.out.printf("the sum of the series, when epsilon = " + epsilon + ": %.6f", sum);
     }
 
 }
