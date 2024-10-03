@@ -1,4 +1,4 @@
-public class task3_3 {
+public class Task3_3 {
     public static void main(String[] args) {
        
         double epsilon = 0.001;

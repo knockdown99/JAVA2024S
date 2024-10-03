@@ -1,4 +1,4 @@
-public class task2_3 {
+public class Task2_3 {
     public static double calculateX(double t, int n) {
         double result = 0;
 
