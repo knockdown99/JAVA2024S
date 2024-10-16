@@ -1,24 +1,24 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Task1_4 {
+public class Task1_4{
     public static void main(String[] args) {
         // Заданий масив
         Object[] array = {-9, -50, -90, 0,};
 
-        // Фільтруємо масив, залишаючи тільки додатні цілі числа
-        List<Integer> positiveNumbers = new ArrayList<>(); //Динамічний масив
-        for (Object element : array) 
-        {
-            if (element instanceof Integer && (int) element > 0) {
-                positiveNumbers.add((Integer) element); //додавання нового елементу в кінець списку
+        // Фільтруємо масив, залишаючи тільки додатні числа
+        List<Double> positiveNumbers = new ArrayList<>(); //Динамічний масив
+        
+        for (Object element : array) {
+            double num = (Double) element;
+            if (num > 0) {
+                positiveNumbers.add(num); 
             }
         }
 
         // Обчислюємо добуток додатних чисел
-        int product = 1;
-        for (int number : positiveNumbers) 
-        {
+        double product = 1;
+        for (double number : positiveNumbers) {
             product *= number;
         }
 
@@ -27,12 +27,9 @@ public class Task1_4 {
 
         // Виводимо результат
         if (Double.isNaN(geometricMean)) {
-             
-            System.out.println("The array has no positive integers");
+            System.out.println("The array has no positive numbers");
+        } else {
+            System.out.println("Geometric mean of positive numbers: " + geometricMean);
         }
-        else{
-           System.out.println("Geometric mean of positive integers: " + geometricMean); 
-        }
-        
     }
 }
