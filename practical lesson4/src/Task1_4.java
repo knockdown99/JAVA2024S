@@ -1,35 +1,31 @@
 import java.util.ArrayList;
-import java.util.List;
 
 public class Task1_4{
     public static void main(String[] args) {
-        // Заданий масив
-        Object[] array = {-9, -50, -90, 0,};
+        double[] numbers = {-2, -3, 5, 0, 1.3, -4}; 
 
-        // Фільтруємо масив, залишаючи тільки додатні числа
-        List<Double> positiveNumbers = new ArrayList<>(); //Динамічний масив
-        
-        for (Object element : array) {
-            double num = (Double) element;
-            if (num > 0) {
-                positiveNumbers.add(num); 
+        // Знаходимо індекси додатних елементів
+        ArrayList<Integer> positiveIndices = new ArrayList<>(); //динамічний масив
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] > 0) {
+                positiveIndices.add(i); // додаємо індекс позитивного елеммента в новий масив
             }
         }
 
-        // Обчислюємо добуток додатних чисел
-        double product = 1;
-        for (double number : positiveNumbers) {
-            product *= number;
+        // Розраховуємо добуток індексів
+        double product = 1.0;
+        for (int index : positiveIndices) {
+            product *= index;
         }
 
-        // Обчислюємо середнє геометричне
-        double geometricMean = Math.pow(product, 1.0 / positiveNumbers.size());
-
-        // Виводимо результат
+        // Розраховуємо середнє геометричне
+        double geometricMean = Math.pow(product, 1.0 / positiveIndices.size());
+        
+///Вивід        
         if (Double.isNaN(geometricMean)) {
             System.out.println("The array has no positive numbers");
         } else {
-            System.out.println("Geometric mean of positive numbers: " + geometricMean);
-        }
+        System.out.printf("Geometric mean of indices of positive elements: %.6f", geometricMean);
     }
+}
 }
