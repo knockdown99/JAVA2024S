@@ -20,7 +20,7 @@ public class task1_5 {
     }
 
     public static void main(String[] args) {
-        byte[] numbers = {3, 7, 4, 9, 5, 2, 6, 1, 2, 1, 0, 11, 5};
+        byte[] numbers = {3, 7, 4, 9, 5, 2, 6, 1, 2, 1, 0, 11, 5, -70};
         sortDescending(numbers);
 
         // Виводимо відсортований масив
