@@ -1,4 +1,5 @@
 public class task1_5 {
+    //Selection sort
     public static void sortDescending(byte[] array) {
         int n = array.length;
 

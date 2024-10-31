@@ -1,6 +1,6 @@
 public class task2_5 {
     public static void sortDescending(byte[] array) {
-        
+        //Insertion sort
         int n = array.length;
         for (int i = 1; i < n; ++i) {
             byte key = array[i]; //Індекс: ключ з яким виконується порівняння
