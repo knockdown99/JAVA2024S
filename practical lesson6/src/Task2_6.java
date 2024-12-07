@@ -2,7 +2,7 @@
 public class Task2_6 {
     public static void main(String[] args) {
         String sentence = "The user with the nickname koala757677 this month left 3 times more " +
-                          "comments than the user with the nickname croco181dile181920 4 months ago 23 1er war";
+                          "comments than the user with the nickname croco181dile181920 4 months ago 23 1er war 3r3rec";
         
         int wordCount = countWordsInSentence(sentence);
         System.out.println("Number of words: " + wordCount);

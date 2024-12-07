@@ -1,7 +1,7 @@
 public class Task1_6test {
 
     public static void main(String[] args) {
-        int positiveNumber = 127;
+        int positiveNumber = -127;
         int negativeNumber = -127;
 
         System.out.println(intToBinaryString(positiveNumber));  // Виведе двійкове представлення 127 у вигляді 32 біт
