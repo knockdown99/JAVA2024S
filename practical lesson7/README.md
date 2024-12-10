@@ -1,4 +1,3 @@
-# Java Collections Framework: FAQ
 
 ## 1. Для чого призначений Collections Framework?
 Java Collections Framework (JCF) призначений для:

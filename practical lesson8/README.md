@@ -1,4 +1,4 @@
-# Java Collections: `Set`, `HashSet`, `TreeSet` і Хешування
+
 
 ## 1. **Чим інтерфейс `Set` відрізняється від `Collection` та `List`?**
 
