@@ -26,7 +26,7 @@ class Faculty {
     // Конструктор для створення факультету
     public Faculty(String name) {
         this.name = name;
-        this.students = new ArrayList<>();
+        this.students = new ArrayList<>(); //динамічний список
     }
 
     // Метод для додавання студента до списку
@@ -43,7 +43,7 @@ class Institute {
     // Конструктор для створення інституту
     public Institute(String name) {
         this.name = name;
-        this.faculties = new ArrayList<>();
+        this.faculties = new ArrayList<>(); //динамічний список
     }
 
     // Метод для додавання факультету до списку
@@ -60,10 +60,10 @@ public int getTotalStudents() {
 
     //Отримання нетипізованого ітератора для списку факультетів faculties — це список об'єктів класу Faculty.
     Iterator facultyIterator = faculties.iterator();
-    // Перевірка, чи є наступний елемент у списку за допомогою facultyIterator.hasNext().
+    // Цикл для перебору, Перевірка, чи є наступний елемент у списку за допомогою .hasNext().
     while (facultyIterator.hasNext()) {
         
-        Faculty faculty = (Faculty) facultyIterator.next(); // Отримання кількості студентів на поточному факультеті        
+        Faculty faculty = (Faculty) facultyIterator.next(); // Отримання кількості студентів на  факультеті. (Faculty) приводить до типу Faculty бо ітратор нетипізований        
         int studentCount = faculty.students.size(); // Метод .size() повертає кількість студентів у списку.
 
         total += studentCount;
@@ -118,8 +118,6 @@ public List<Student> getTopStudents() {
             }
         }
     }
-
-    
     return topStudents;
 }
 
