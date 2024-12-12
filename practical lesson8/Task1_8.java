@@ -124,6 +124,7 @@ public class Task1_8 {
         Student student2 = new Student("Olena", "Shevchenko", "S124", 89);
         Student student3 = new Student("Alina", "Dmytrenko", "S125", 97);
         Student student4 = new Student("Mykolo", "Shevchenko", "S126", 100);
+        Student student5 = new Student("Panas", "Kochiy", "S127", 88);
         // Створюємо факультети
         Faculty faculty1 = new Faculty("Engineering");
         faculty1.addStudent(student1); // Додаємо студентів до факультету
@@ -132,6 +133,7 @@ public class Task1_8 {
         Faculty faculty2 = new Faculty("Telecommunications");
         faculty2.addStudent(student3);
         faculty2.addStudent(student4);
+        faculty2.addStudent(student5);
         // Створюємо інститут
         Institute institute = new Institute("Technical University");
         institute.addFaculty(faculty1); // Додаємо факультети до інституту
